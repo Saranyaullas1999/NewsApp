@@ -2,8 +2,6 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-           <div *ngIf="status then showNews else showLoadingScreen"></div>
-           <ng-template #showNews>
             <div class="row g-3">
                 <div *ngFor="let i of newsData.articles" class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
                     <div class="card">
@@ -16,10 +14,6 @@
                       </div>
                 </div>
             </div>
-           </ng-template>
-           <ng-template #showLoadingScreen>
-            
-           </ng-template>
         </div>
     </div>
 </div>
